@@ -1,0 +1,734 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,300;1,300&display=swap');
+:root{
+    --color-fondo: white;
+    --color-barra: black;
+    --numero-caracteres: 160;
+}
+
+*{
+    font-family: 'Montserrat', sans-serif;
+}
+
+.form-control:focus{
+    outline: none !important;
+}
+
+.menu{
+    background-color: white !important;
+}
+
+.menuOpciones ul li a{
+    font-family: 'Montserrat', sans-serif;
+    font-size: 18px;
+}
+
+a {
+    text-decoration: none;
+}
+
+.nav-link:hover{
+    color:#93d011 !important;
+}
+
+.navbar-nav{
+    padding-top: 30px;
+}
+
+.Container_logo{
+    padding-left: 50px !important;
+    padding-top: 30px;
+}
+
+.navbar-nav{
+    width: 100% !important;
+    justify-content: space-evenly;
+}
+
+.carousel-caption{
+    top: 43% !important;
+}
+
+.carousel-dark .carousel-caption {
+    color: white !important;
+}
+
+.carousel{
+    margin-top: 30px;
+}
+
+.containerIntro{
+    display: flex;
+    justify-content: space-evenly;
+    margin-top:50px;
+}
+
+.tituloIntro{
+    text-align: center;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.tituloIntro p{
+    font-size: 30px;
+    font-weight: 900;
+    width: 80%;
+    display: inline-block;
+}
+
+.tituloIntro p{
+    position: relative;
+    display: inline-block;
+}
+
+.tituloIntro p::before{
+    content: '';
+    background-color: var(--color-fondo);
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top:0;
+    right: 0;
+    transform-origin: 100% 100%;
+    animation: 
+        escribir 7.5s steps(var(--numero-caracteres, 150), end) forwards; /*animacion texto escribiendose*/
+}
+
+/* Animación */
+@keyframes escribir{
+    0% { width: 100% }
+    99% { width: 3px; background-color: inherit; }
+    100% { 
+      width: 3px; 
+      
+      transform: translateX(8px);
+    }
+}
+
+.containerInfo{
+    align-items: center;
+}
+
+.ContainerInfoIntro{
+    justify-content: space-around;
+}
+
+.ContainerInfoIntro h2{
+    margin-top: 70px;
+    font-weight: 700;
+    font-size: 28px;
+    margin-bottom: 50px;
+}
+
+.containerParrafoIntro{
+    width: 50%;
+    text-align: center;
+    /* padding-top: 80px; */
+    display: flex;
+}
+
+.parrafoIntro{
+    display: grid;
+    padding: 10%;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1.3em;
+    text-align: justify;
+}
+
+.imgIntro{
+    /* background-image: url("https://images.pexels.com/photos/388415/pexels-photo-388415.jpeg"); */
+    background-image: url("./img/cultivos4.png");
+    background-size: cover;
+    height: 600px;
+    display: flex;
+    margin-top: 50px;
+}
+
+.imgIntro p{
+    color: white;
+    text-align: center;
+    align-items: center;
+    display: grid;
+    padding: 60px;
+    font-size: 1.5em;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bold;
+}
+
+.infoIntro{
+    display: flex;
+    padding-top: 120px;
+    text-align: center;
+    justify-content: space-evenly;
+    padding-bottom: 120px;
+}
+
+.infoIntro p{
+    font-size: 1.3em;
+}
+
+.iconsIntro{
+    display: block;
+}
+
+.iconsIntro p{
+    font-family: 'Montserrat', sans-serif;
+    width: 300px;
+    text-align: justify;
+    font-size: 1.3em;
+}
+
+.icon{
+    font-size: 50px;
+    margin-top: 20px;
+}
+
+/* Footer */
+.containerFooter{
+    justify-content: center;
+    align-items: center;
+}
+
+.footer{
+    background-color: #633911 !important;
+    padding-top: 30px;
+    padding-bottom: 0px;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.footer p{
+    color: white;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.legales{
+    color: white;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+/* Quienes somos */
+.ContainerQuienesSomos{
+    background-image: url("https://images.pexels.com/photos/388415/pexels-photo-388415.jpeg");
+    height: 550px;
+    margin-top: 20px;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.containerEmpresa{
+    margin-top: 50px;
+    align-items: center;
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.containerEmpresa div i{
+    margin-top: 20px;
+    font-size: 50px;
+    margin-bottom: 20px;
+}
+
+.containerEmpresa div p{
+    text-align: justify;
+    padding: 15px;
+}
+
+.ContainerQuienesSomos h1{
+    color: white;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.ContainerQuienesSomos h5{
+    color: white;
+    font-family: 'Montserrat', sans-serif;
+    width: 70%;
+    font-size: 1.3rem;
+}
+
+.quienesSomos{
+    padding-top: 50px;
+    text-align: center;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.quienesSomos p{
+    width: 80%;
+    display: inline-block;
+    font-size: 1.3rem;
+}
+
+/* Productos */
+.containerProducts{
+    justify-content: space-evenly;
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+
+.containerProducts h1{
+    display: flex;
+    justify-content: center;
+    padding-bottom: 30px;
+}
+
+.product{
+    text-align: center;
+    /* border: 7px solid green; */
+    border-radius: 20px;
+}
+
+.btn-primary {
+    background-color: #77be43 !important;
+    border: none !important;
+    border-radius: 20px;
+}
+
+.btn-primary a{
+    color: white !important;
+}
+
+.nombreProducto{
+    text-align: center;
+    margin-top: 50px;
+}
+
+.containerInfoProduct{
+    justify-content: space-evenly;
+    padding-top: 20px;
+}
+
+.imgProduct{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.imgProduct img{
+    height: 250px;
+    width: 270px;
+}
+
+.containerResultadosProductos{
+    justify-content: space-around;
+    padding-top: 40px;
+}
+
+.containerResultadosProductos div{
+    text-align: center;
+}
+
+.containerResultadosProductos div h4{
+    margin-bottom: 20px;
+}
+
+.containerResultadosProductos div img{
+    width: 400px;
+}
+
+.containerCaractProduct{
+    margin-top: 50px;
+}
+
+.containerBotonDescarga{
+    margin-top: 50px;
+    justify-content: center;
+    margin-bottom: 50px;
+}
+
+.botonDescarga{
+    border-radius: 0px;
+    width: 300px;
+}
+
+/* Certificaciones */
+.tituloCertificaciones{
+    margin-top: 50px;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.fa-file{
+    color: #CCC !important;
+    font-weight: 900 !important;
+}
+
+.btnCertificado a{
+    font-weight: bold;
+}
+
+/* Contacto */
+.ftco-section{
+    margin-top: 50px;
+    margin-bottom: 50px;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.contact-wrap h3{
+    text-align: center;
+}
+
+.no-gutters{
+    background-color: #7a5334;
+    height: 490px;
+}
+
+.btn-submit{
+    margin-top: 20px;
+}
+
+.btn-submit div input{
+    background-color: #77be43;
+    border: none;
+}
+
+.btnEnviarForm{
+    font-weight: 900;
+    font-size: 18px;
+}
+
+.text a{
+    color: black;
+}
+
+.containerIconsForm{
+    margin-bottom: 50px;
+}
+
+
+/* btn whatsAPP */
+.whatsapp{
+    background-color: white;
+    border-radius: 150px;
+    padding: 15px 10px 10px 20px;
+    width: 100px;
+    color: black;
+    height: 100px;
+    scale: 0.8;
+    box-shadow: 1px 1px 15px 8px rgba(0, 0, 0, 0.2);
+}
+
+@media only screen and (max-width: 600px) {
+
+    .navbar-nav{
+        padding-top: 10px !important;
+    }
+    
+    .Container_logo{
+        padding: 0px;
+        padding-left: 0px !important;
+    }
+
+    .carousel{
+        margin-top: 8px;
+    }
+
+    .containerIntro{
+        display: block;
+        margin-top: 0;
+    }
+
+    .tituloIntro{
+        margin-top: 50px !important;
+    }
+
+
+    .containerInfo img{
+        width: 280px;
+    }
+
+    .containerParrafoIntro{
+        width: 100%;
+        padding-top: 0 !important;
+    }
+
+    .containerIntro .imgParrafoIntro img{
+        object-fit: cover;
+        width:100%;
+        height:100%;
+    } 
+
+    .imgParrafoIntro{
+        text-align: center;
+    }
+
+    .ContainerInfoIntro{
+        text-align: center;
+        margin: 50px 0 50px 0;
+    }
+
+    .infoIntro{
+        display: block;
+        padding-top:50px;
+        padding-bottom: 50px;
+    }
+
+    .iconsIntro{
+        display: flex;
+        flex-direction: column-reverse;
+    }
+
+    .iconsIntro p{
+        width: auto;
+    }
+
+    .iconsIntro i{
+        margin-bottom: 20px;
+    }
+
+    .imgIntro{
+        height: auto;
+    }
+
+    .imgIntro p{
+        padding: 20px;  
+    }
+
+    .no-gutters{
+        background-color: #7a5334;
+        height: 490px;
+    }
+
+    label{
+        color:white;
+    }
+
+    .btn-submit{
+        text-align: center;
+        margin-top: 40px;
+    }
+    
+    .containerCertficados{
+        text-align: center;
+        margin-top: 50px;
+        margin-bottom: 50px;
+    }
+
+    .containerCertficados div i{
+        font-size: 80px;
+    }
+
+    .certificado{
+        margin-top: 50px;
+    }
+
+    .certificado h5{
+        margin-bottom: 30px;
+    }
+
+    .btnCertificado{
+        margin-top: 30px;
+    }
+
+
+    .product{
+        padding-bottom: 50px;
+    }
+
+    .containerResultadosProductos div img{
+        width: 300px;
+        margin-bottom: 20px;
+    }
+
+    .containerBotonDescarga{
+        margin-top: 20px;
+        justify-content: center;
+        margin-bottom: 50px;
+    }
+
+    .botonDescarga {
+        border-radius: 0px;
+        width: 250px;
+    }
+
+    .imgContacto{
+        display: none !important;
+    }
+
+    .whatsapp {
+        position: fixed;
+        bottom: 20px;
+        right: 20px;
+        scale: 0.7;
+        padding: 23px 10px 10px 28px !important;
+        box-shadow: 1px 1px 15px 8px rgba(0, 0, 0, 0.2);
+    }
+
+    .whatsapp a i{
+        color: #25D366;
+        font-size: 50px;
+    }
+
+}
+
+@media only screen and (min-width: 768px) {
+    
+    .carousel-caption{
+        top: 40% !important;
+    }
+
+    .containerResultadosProductos div img {
+        width: 300px;
+    }
+
+    .tituloIntro{
+        margin-top: 50px;
+    }
+
+    .containerInfo{
+        justify-content: center;
+        text-align: center;
+    }
+
+    .containerParrafoIntro{
+        width: auto;
+        margin-top: 50px;
+    }
+
+    .parrafoIntro{
+        padding: 0;
+        margin-bottom: 50px;
+    }
+
+    .ContainerInfoIntro{
+        margin-top: 50px;
+        justify-content: center;
+        text-align: center;
+        margin-bottom: 50px;
+    }
+
+    .iconsIntro{
+        display:flex;
+        flex-direction: column-reverse;
+    }
+
+    .iconsIntro p{
+        width: auto;
+    }
+
+    .iconsIntro i{
+        margin-bottom: 30px;
+    }
+
+    .containerEmpresa{
+        justify-content: center;
+    }
+
+    .containerCertficados{
+        text-align: center;
+        margin-top: 50px;
+        margin-bottom: 50px;
+    }
+
+    .containerCertficados div i{
+        font-size: 80px;
+    }
+
+    .containerCertficados{
+        justify-content: space-around;
+    }
+    
+    .certificado{
+        margin-top: 50px;
+    }
+
+    .certificado h5{
+        margin-bottom: 30px;
+    }
+
+    .btnCertificado{
+        margin-top: 30px;
+    }
+
+    label{
+        color:white;
+    }
+
+    .whatsapp {
+        position: fixed;
+        bottom: 20px;
+        right: 20px;
+        padding: 23px 10px 10px 28px;
+        box-shadow: 1px 1px 15px 8px rgba(0, 0, 0, 0.2);
+    }
+
+    .whatsapp a i{
+        color: #25D366;
+        font-size: 50px;
+    }
+
+}
+
+@media only screen and (min-width: 992px) {
+    
+    .carousel-caption{
+        top: 43% !important;
+    }
+
+    .containerResultadosProductos div img {
+        width: 400px;
+    }
+
+    .ContainerInfoIntro{
+        justify-content: space-around;
+    }
+
+    .iconsIntro {
+        display: block; 
+    }
+
+    .containerParrafoIntro {
+        width: 50%;
+    } 
+
+    .containerInfo{
+        margin-top: 50px;
+    }
+
+    .imgParrafoIntro img{
+        width: 450px;
+    }
+
+    .certificado{
+        margin-top: 50px;
+    }
+
+    .certificado h5{
+        margin-bottom: 30px;
+    }
+
+    .certificado:hover{
+        color: #a0d07d;
+    }
+
+    .btnCertificado{
+        margin-top: 30px;
+    }
+
+    label{
+        color:white;
+    }
+
+    .whatsapp {
+        position: fixed;
+        bottom: 20px;
+        right: 20px;
+        padding: 15px 15px 10px 20px;
+        box-shadow: 1px 1px 15px 8px rgba(0, 0, 0, 0.2);
+    }
+
+    .whatsapp a{
+        display: flex;
+        align-items: center;
+        color: black;
+    }
+
+    .whatsapp a i{
+        color: #25D366;
+        font-size: 70px;
+    }
+
+}
