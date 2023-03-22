@@ -280,6 +280,11 @@ a {
     font-size: 1.8rem;
 }
 
+.containerImgProduct{
+    display: flex;
+    justify-content: center;
+}
+
 .containerProducts h1{
     display: flex;
     justify-content: center;
