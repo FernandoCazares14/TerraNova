@@ -146,7 +146,7 @@ a {
     color: white;
     text-align: center;
     align-items: center;
-    display: grid;
+    display: flex;
     padding: 60px;
     font-size: 1.5em;
     font-family: 'Montserrat', sans-serif;
@@ -172,7 +172,6 @@ a {
 .iconsIntro p{
     font-family: 'Montserrat', sans-serif;
     width: 300px;
-    text-align: justify;
     font-size: 1.3em;
 }
 
@@ -270,22 +269,32 @@ a {
     padding-bottom: 50px;
 }
 
+.containerSVG{
+    text-align: center;
+}
+
 .containerProducts h1{
     display: flex;
     justify-content: center;
     padding-bottom: 30px;
 }
 
+.containerSVG img{
+    position: absolute;
+}
+
 .product{
     text-align: center;
     /* border: 7px solid green; */
     border-radius: 20px;
+    /* position: absolute; */
 }
 
 .btn-primary {
     background-color: #77be43 !important;
     border: none !important;
     border-radius: 20px;
+    margin-top: 20px;
 }
 
 .btn-primary a{
@@ -411,7 +420,7 @@ a {
     box-shadow: 1px 1px 15px 8px rgba(0, 0, 0, 0.2);
 }
 
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 767px) {
 
     .navbar-nav{
         padding-top: 10px !important;
@@ -523,6 +532,9 @@ a {
         margin-top: 30px;
     }
 
+    .containerSVG{
+        margin-top: 50px;
+    }
 
     .product{
         padding-bottom: 50px;
