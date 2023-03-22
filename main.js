@@ -6,6 +6,6 @@ document.addEventListener('DOMContentLoaded', function() {
     // Agrega la clase 'mostrar' al elemento de texto después de un retardo de 1 segundo
     setTimeout(function() {
       texto.classList.add('mostrar');
-    }, 500);
+    }, 300);
   
 });
