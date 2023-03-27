@@ -98,9 +98,41 @@ a {
     99% { width: 3px; background-color: inherit; }
     100% { 
       width: 3px; 
-      
       transform: translateX(8px);
     }
+}
+
+.containerFertilizantes{
+    margin-top: 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    border: 1px solid transparent;
+}
+
+.containerFertilizantes h1{
+    text-align: center;
+}
+
+.containerSemilla{
+    text-align: center;
+}
+
+.containerSemilla img{
+    width: 70%;
+}
+
+.containerNatural{
+    text-align: center;
+}
+
+.containerOrganico h1{
+    margin-top: 150px;
+    text-align: center;
+}
+
+.containerNatural img{
+    width: 50%;
 }
 
 .containerInfo{
@@ -109,13 +141,14 @@ a {
 
 .ContainerInfoIntro{
     justify-content: space-around;
+    margin-bottom: 120px;
 }
 
 .ContainerInfoIntro h2{
     margin-top: 70px;
     font-weight: 700;
     font-size: 28px;
-    margin-bottom: 50px;
+    margin-bottom: 90px;
 }
 
 .containerParrafoIntro{
@@ -167,6 +200,7 @@ a {
 
 .iconsIntro{
     display: block;
+    box-shadow: 1px 1px 10px 0.9px rgba(119, 190, 67, 0.7)
 }
 
 .iconsIntro p{
@@ -500,8 +534,7 @@ a {
     }
 
     .iconsIntro{
-        display: flex;
-        flex-direction: column-reverse;
+        margin-top: 50px;
     }
 
     .iconsIntro p{
@@ -629,16 +662,18 @@ a {
         margin-bottom: 50px;
     }
 
-    .ContainerInfoIntro{
-        margin-top: 50px;
+    .ContainerInfoIntro{        
         justify-content: center;
         text-align: center;
-        margin-bottom: 50px;
+        margin-bottom: 90px;
+    }
+
+    .ContainerInfoIntro h2{        
+        margin-bottom: 0px;
     }
 
     .iconsIntro{
-        display:flex;
-        flex-direction: column-reverse;
+        margin-top: 50px;
     }
 
     .iconsIntro p{
@@ -709,7 +744,13 @@ a {
     }
 
     .ContainerInfoIntro{
+        margin-top: 50px;
         justify-content: space-around;
+        margin-bottom: 120px;
+    }
+
+    .ContainerInfoIntro h2{
+        margin-bottom: 50px;
     }
 
     .iconsIntro {
