@@ -142,7 +142,7 @@ a {
 .containerOrganico{
     display: flex;
     flex-direction: column;
-    align-items: baseline;
+    /* align-items: baseline; */
     justify-content: center;
 }
 
@@ -522,7 +522,6 @@ a {
         margin-top: 50px !important;
     }
 
-
     .containerInfo img{
         width: 280px;
     }
@@ -555,6 +554,7 @@ a {
 
     .iconsIntro{
         margin-top: 50px;
+        width: 90%;
     }
 
     .iconsIntro p{
@@ -571,6 +571,10 @@ a {
 
     .imgIntro p{
         padding: 20px;  
+    }
+
+    .rowNatural{
+        flex-direction: column-reverse;
     }
 
     .no-gutters{
@@ -617,6 +621,10 @@ a {
         padding-bottom: 50px;
     }
 
+    .containerProducts h1{
+        font-size: 2.4rem;
+    }
+
     .containerResultadosProductos div img{
         width: 300px;
         margin-bottom: 20px;
@@ -640,7 +648,7 @@ a {
     .whatsapp {
         position: fixed;
         bottom: 20px;
-        right: 20px;
+        right: 0px;
         scale: 0.7;
         padding: 23px 10px 10px 28px !important;
         box-shadow: 1px 1px 15px 8px rgba(0, 0, 0, 0.2);
@@ -701,6 +709,10 @@ a {
 
     .iconsIntro i{
         margin-bottom: 30px;
+    }
+
+    .rowNatural{
+        flex-direction: column-reverse !important;
     }
 
     .containerEmpresa{
@@ -775,6 +787,11 @@ a {
     .iconsIntro {
         display: block; 
     }
+
+    .rowNatural{
+        flex-direction: row !important;
+    }
+
 
     .containerParrafoIntro {
         width: 50%;
